@@ -13,16 +13,16 @@
 
 
 <h1>Edit Form</h1>
-<form:form modelAttribute="SuggestionVO" method="post" action="../editok">
+<form:form modelAttribute="suggestionVO" method="post" action="../editok">
     <form:hidden path="personID"/>
     <table id="edit">
-        <tr><td>Category:</td><td><form:input path="category"/></td></tr>
-        <tr><td>Title:</td><td><form:input path="title"/></td></tr>
+        <tr><td>Category:</td><td><form:input path="suggestions"/></td></tr>
+        <tr><td>Name:</td><td><form:input path="name"/></td></tr>
         <tr><td>Nickname:</td><td><form:input path="nickname"/></td></tr>
         <tr><td>Number:</td><td><form:input path="s_number"/></td></tr>
         <tr><td>Major:</td><td><form:input path="major"/></td></tr>
         <tr><td>Department:</td><td><form:input path="department"/></td></tr>
-        <tr><td>Content:</td><td><form:textarea cols="50" rows="5" path="suggestions" /></td></tr>
+        <tr><td>Content:</td><td><form:textarea cols="50" rows="5" path="content" /></td></tr>
         <tr><td colspan="2"><input type="submit" value="Edit Post"/>
             <input type="button" value="Cancel" onclick="history.back()" /></td></tr>
     </table>
