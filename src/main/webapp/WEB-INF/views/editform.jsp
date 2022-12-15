@@ -13,7 +13,8 @@
 
 
 <h1>Edit Form</h1>
-<form:form modelAttribute="suggestionVO" method="post" action="../editok">
+
+<form:form modelAttribute="SuggestionVO" method="post" action="../editok">
     <form:hidden path="seq"/>
     <table id="edit">
         <tr><td>Category:</td><td><form:input path="category"/></td></tr>
