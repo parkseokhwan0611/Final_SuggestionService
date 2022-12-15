@@ -43,8 +43,7 @@
   <tr>
     <th>Id</th>
     <th>Category</th>
-    <th>Title</th>
-    <th>Writer</th>
+    <th>Name</th>
     <th>Nickname</th>
     <th>Number</th>
     <th>Major</th>
@@ -58,13 +57,12 @@
     <tr>
       <td>${u.getSeq()}</td>
       <td>${u.getCategory()}</td>
-      <td>${u.getTitle()}</td>
-      <td>${u.getWriter()}</td>
+      <td>${u.getName()}</td>
       <td>${u.getNickname()}</td>
-      <td>${u.getNumber()}</td>
+      <td>${u.getS_number()}</td>
       <td>${u.getMajor()}</td>
       <td>${u.getDepartment()}</td>
-      <td>${u.getContent()}</td>
+      <td>${u.getSuggestions()}</td>
       <td>${u.getRegdate()}</td>
       <td><a href="editpost/${u.seq}">Edit</a></td>
         <%--		<td><a href="editform/${u.seq()}">Edit</a></td>--%>
