@@ -16,7 +16,7 @@ public class SugController {
     @Autowired
     SugService sugService;
     @RequestMapping(value = "/")
-    public String home(){return "index";}
+    public String home(){return "board/index";}
     @RequestMapping(value = "/board/post", method = RequestMethod.GET)
     public String suglist(Model model){
         model.addAttribute("list",sugService.getSugList());
