@@ -4,18 +4,18 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Suggestion">
     <insert id="insertSug">
-        insert into p_suggestion (name, nickname, s_number, major, department, category, suggestions) values (#{name}, #{nickname},#{s_number},#{major},#{department},#{category},#{suggestions})
+        insert into suggestion (name, nickname, s_number, major, department, category, suggestions) values (#{name}, #{nickname},#{s_number},#{major},#{department},#{category},#{suggestions})
     </insert>
     <update id="updateSug">
-        update p_suggestion set name = #{name}, nickname = #{nickname}, s_number = #{s_number}, major = #{major}, department = #{department}, category = #{category}, suggestions = #{suggestions} where personID = #{personID}"
+        update suggestion set name = #{name}, nickname = #{nickname}, s_number = #{s_number}, major = #{major}, department = #{department}, category = #{category}, suggestions = #{suggestions} where personID = #{personID}"
     </update>
     <delete id="deleteSug">
-        delete from p_suggestion where personID = #{personID}
+        delete from suggestion where personID = #{personID}
     </delete>
     <select id="getSug" resultType="com.finalproject.VO.SuggestionVO">
-        select * from p_suggestion where personID= #{personID}
+        select * from suggestion where personID= #{personID}
     </select>
     <select id="getSugList" resultType="com.finalproject.VO.SuggestionVO">
-        select * from p_suggestion order by personID desc
+        select * from suggestion order by personID desc
     </select>
 </mapper>
