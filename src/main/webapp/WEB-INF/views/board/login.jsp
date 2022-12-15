@@ -21,7 +21,8 @@
 <body>
 <div style='width:100%;text-align:center;padding-top:100px'>
     <form method="post"action="loginOk">
-        <img src='../img/santa.png' height="250">
+        <img src='../img/santa.jpg' height="250">
+        <h2>관리자 로그인</h2>
         <div><label>User ID: </label><input type='text' name='userid'/></div>
         <div><label>Password: </label>
             <input type='password' name='password'/></div>
