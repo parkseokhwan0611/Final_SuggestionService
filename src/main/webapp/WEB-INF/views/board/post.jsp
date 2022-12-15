@@ -55,7 +55,7 @@
   </tr>
   <c:forEach items="${list}" var="u">
     <tr>
-      <td>${u.getSeq()}</td>
+      <td>${u.getPersonID()}</td>
       <td>${u.getCategory()}</td>
       <td>${u.getName()}</td>
       <td>${u.getNickname()}</td>
@@ -64,14 +64,12 @@
       <td>${u.getDepartment()}</td>
       <td>${u.getSuggestions()}</td>
       <td>${u.getRegdate()}</td>
-      <td><a href="editpost/${u.seq}">Edit</a></td>
-        <%--		<td><a href="editform/${u.seq()}">Edit</a></td>--%>
-        <%--		<td><a href="javascript:delete_ok('${u.seq()}')">Delete</a></td>--%>
-      <td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
+      <td><a href="editform/${u.personID}">Edit</a></td>
+      <td><a href="javascript:delete_ok('${u.personID}')">Delete</a></td>
     </tr>
   </c:forEach>
 </table>
-<br/><button tybe="button" onclick="location.href='addpost'">새글쓰기</button>
+<br/><button tybe="button" onclick="location.href='add'">새글쓰기</button>
 
 </body>
 </html>
