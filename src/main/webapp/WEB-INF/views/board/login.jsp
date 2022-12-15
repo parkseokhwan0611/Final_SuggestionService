@@ -1,16 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 박석환
-  Date: 2022-12-15
-  Time: 오후 3:41
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Login page</title>
     <style>
         img, label { display: inline-block; margin: 0.5rem;}
         label {width: 80px}

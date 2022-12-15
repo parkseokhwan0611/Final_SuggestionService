@@ -136,11 +136,8 @@
             <tr>
               <th>Id</th>
               <th>Category</th>
-              <th>Name</th>
               <th>Nickname</th>
-              <th>Number</th>
               <th>Major</th>
-              <th>Department</th>
               <th>Content</th>
               <th>Regdate</th>
               <th>Edit</th>
@@ -150,11 +147,8 @@
               <tr>
                 <td>${u.getPersonID()}</td>
                 <td>${u.getCategory()}</td>
-                <td>${u.getName()}</td>
                 <td>${u.getNickname()}</td>
-                <td>${u.getS_number()}</td>
                 <td>${u.getMajor()}</td>
-                <td>${u.getDepartment()}</td>
                 <td>${u.getSuggestions()}</td>
                 <td>${u.getRegdate()}</td>
                 <td><a href="editform/${u.personID}">Edit</a></td>

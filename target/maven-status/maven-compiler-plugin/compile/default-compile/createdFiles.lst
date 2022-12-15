@@ -1,9 +1,0 @@
-com\finalproject\controller\LoginController.class
-com\finalproject\DAO\UserDAO.class
-com\finalproject\SugService.class
-com\finalproject\SugServiceImpl.class
-com\finalproject\VO\SuggestionVO.class
-com\finalproject\DAO\SuggestionDAO.class
-com\finalproject\DAO\UserDAO$UserServiceImpl.class
-com\finalproject\controller\SugController.class
-com\finalproject\VO\UserVO.class
