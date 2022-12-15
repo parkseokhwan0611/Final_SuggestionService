@@ -1,25 +1,112 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Insert title here</title>
+  <title>ADD Form</title>
+  <style>
+    body{
+      box-sizing: border-box;
+      align-items: center;
+      display: flex;
+      align-content: center;
+
+    }
+    input, select, textarea{
+      border-radius: 0.5rem;
+      border: 1px solid lightskyblue;
+      margin-bottom: 2px;
+    }
+    .sign{
+      margin: 20px;
+      padding: 10px;
+      max-width: 500px;
+      text-align: center;
+    }
+    legend{
+      text-align: center;
+      color: #002F63;
+    }
+    fieldset{
+      border-radius: 0.5rem;
+      border:  3px solid lightskyblue;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      background-color: lightskyblue;
+      border-radius: 0.5rem;
+      margin-bottom: 0;
+    }
+    p{
+      margin: 0;
+      text-align: right;
+      color: lightskyblue;
+
+    }
+    .cen{
+      text-align: center;
+    }
+    .submit, .modal_btn{
+      margin-top: 10px;
+      background-color: lightskyblue;
+      color: white;
+      height: 30px;
+      width: 50%;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      border: 1px solid lightskyblue;
+      font-size: 1rem;
+    }
+    .modal_btn{
+
+      width : 25% !important;
+    }
+    .submit:hover{
+      background-color: white;
+      color: lightskyblue;
+    }
+  </style>
 </head>
 <body>
-
-<h1>Add New Post</h1>
-<form action="addok" method="get">
-  <table id="edit">
-    <tr><td>Category:</td><td><input type="text" name="category"/></td></tr>
-    <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
-    <tr><td>Nickname:</td><td><input type="text" name="nickname"/></td></tr>
-    <tr><td>Number:</td><td><input type="text" name="s_number"/></td></tr>
-    <tr><td>Major:</td><td><input type="text" name="major"/></td></tr>
-    <tr><td>Department:</td><td><input type="text" name="department"/></td></tr>
-    <tr><td>Content:</td><td><textarea cols="50" rows="5" name="suggestions"></textarea></td></tr>
-    <tr><td><a href="post.jsp">View All Records</a></td><td align="right"><input type="submit" value="Add Post"/></td></tr>
-  </table>
+<form action="../addok" class = "sign" method="get">
+  <input type="hidden" name="personID" />
+  <div>
+    <h1>건의사항 수정</h1>
+    <button type="button" class="modal_btn" onclick="location.href = '../post'">닫기</button>
+  </div>
+  <fieldset style="width: 400px;margin:5px">
+    <legend>이름</legend>
+    <label for ="name">이름: </label>
+    <input type="text" id="name" name="name" placeholder="이름을 입력하세요."  required><br>
+    <label for ="nickname">닉네임: </label>
+    <input type="text" id="nickname" name="nickname" placeholder="닉네임을 입력하세요."  required><br>
+  </fieldset>
+  <fieldset style="width: 400px;margin:5px">
+    <legend>학번</legend>
+    <label for ="s_number">학번: </label>
+    <input type="text" id="s_number" name="s_number" placeholder="학번을 입력하세요."  required><br>
+  </fieldset>
+  <fieldset style="width:400px;margin:5px">
+    <legend>학부/전공</legend>
+    <label for="major">학부: </label>
+    <input type="text" id="major" name="major" placeholder="학부를 입력하세요."  required><br>
+    <label for="department">전공: </label>
+    <input type="text" id="department" name="department" placeholder="전공을 입력하세요."  required><br>
+  </fieldset>
+  <fieldset style='width: 400px; margin:5px'>
+    <legend>건의 카테고리</legend>
+    <label for="category">카테고리: </label>
+    <input type="text" id="category" name = "category" placeholder="카테고리를 입력하세요."  required><br>
+  </fieldset>
+  <fieldset>
+    <legend>건의사항</legend>
+    <label for="suggestions"></label>
+    <textarea cols="40" rows="10" id="suggestions" name = "suggestions" placeholder="건의사항을 입력하세요." ></textarea>
+  </fieldset>
+  <div >
+    <input type="submit" class="submit" value="Submit">
+  </div>
 </form>
 
 </body>
