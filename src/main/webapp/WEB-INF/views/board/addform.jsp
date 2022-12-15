@@ -69,10 +69,10 @@
   </style>
 </head>
 <body>
-<form action="../addok" class = "sign" method="get">
+<form name = "add" action="addok" class = "sign" method="get">
   <input type="hidden" name="personID" />
   <div>
-    <h1>건의사항 수정</h1>
+    <h1>건의사항 추가</h1>
     <button type="button" class="modal_btn" onclick="location.href = '../post'">닫기</button>
   </div>
   <fieldset style="width: 400px;margin:5px">
