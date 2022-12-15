@@ -29,7 +29,7 @@
         }
         fieldset{
             border-radius: 0.5rem;
-            border:  2px solid lightskyblue;
+            border:  3px solid lightskyblue;
         }
         h1 {
             text-align: center;
