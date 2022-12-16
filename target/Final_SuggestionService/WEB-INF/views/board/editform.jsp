@@ -73,7 +73,7 @@
     <input type="hidden" name="personID" value="${u.personID}"/>
     <div>
         <h1>건의사항 수정</h1>
-        <button type="button" class="modal_btn" onclick="location.href = '../board/post'">닫기</button>
+        <button type="button" class="modal_btn" onclick="location.href = '../post'">닫기</button>
     </div>
     <fieldset style="width: 400px;margin:5px">
         <legend>이름</legend>
