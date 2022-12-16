@@ -40,7 +40,7 @@ public class SugController {
         model.addAttribute("u",suggestionVO);
         return "board/editform";
     }
-    @RequestMapping(value = "/board/editok", method = RequestMethod.POST)
+    @RequestMapping(value = "/board/editok", method = RequestMethod.GET)
     public String editPostOK(SuggestionVO vo){
         if(sugService.updateSug(vo) == 0)
             System.out.println("데이터 수정 실패");
