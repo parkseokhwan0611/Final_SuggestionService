@@ -7,7 +7,7 @@
         insert into suggestion (name, nickname, s_number, major, department, category, suggestions) values (#{name}, #{nickname},#{s_number},#{major},#{department},#{category},#{suggestions})
     </insert>
     <update id="updateSug">
-        update suggestion set name = #{name}, nickname = #{nickname}, s_number = #{s_number}, major = #{major}, department = #{department}, category = #{category}, suggestions = #{suggestions} where personID = #{personID}"
+        update suggestion set name = #{name}, nickname = #{nickname}, s_number = #{s_number}, major = #{major}, department = #{department}, category = #{category}, suggestions = #{suggestions} where personID = #{personID}
     </update>
     <delete id="deleteSug">
         delete from suggestion where personID = #{personID}
